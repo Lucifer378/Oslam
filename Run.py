@@ -50,7 +50,6 @@ for z in range(200):
 	rc = random.choice; rr = random.randint
 	android = str(random.randint(4,12))
 	aplikasi_versi = str(random.randint(100,299))+".0.0.0"
-	SLR = random.choice(["SM-F936B","SM-F936U","SM-F936U1","SM-F936N","SM-F926B","SM-F926U","SM-F926U1","SM-F926W","SM-F9260","SM-F926N","SM-F916B","SM-F916U","SM-F916U1","SM-F916N","SM-F9160","SM-F916W"])
 	device = random.choice(["SM-N900 Build/NHG47L","SM-N9002 Build/LMY47V","SM-N9005 Build/N4F26T","SM-N9007 Build/OPM5.171019.014","SM-N9008 Build/OPR6.170623.023","SM-N9009V Build/OPM5.171019.015","SM-N900R4 Build/MMB29K"])
 	dev = device.split(" Build/")[0]
 	az = "A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"
@@ -58,9 +57,12 @@ for z in range(200):
 	versi = random.choice(["10_0_2","10_1_1","10_2","10_2_1","10_3_1","10_3_2","10_3_3"])
 	verchrome = random.choice(["602.1.50","602.2.14","602.3.12","602.4.6","603.1.30","603.2.4","603.3.8","601.1.46"])
 	mob = random.choice(["14A456","14B100","14C92","14D27","14E304","14F89","14G60","13C75","13D15","13E233","13E238","13F69","13G34","13G36"])
-	ua = f"Dalvik/2.1.0 (Linux; Android {android}; SM-J105H Build/{build}; wv) [FBAN/FB4A;FBAV/{versi_chrome};FBBV/{versi_app};FBRV/0;FBLC/pt_BR;FBMF/Samsung;FBBD/Samsung;FBDV/SM-J105H;FBSV/{android};FBCA/"+"x86_64:x86:arm64-v8a:armeabi-v7a:armeabi;FBDM/"+"{density=1.5,width=1600,height=900}"+";FB_FW/1;]"
-	if ua in ugent:pass
-	else:ugent.append(ua)
+	ua1 = f"Dalvik/2.1.0 (Linux; Android {android}; SM-J105H Build/{build}; wv) [FBAN/MessengerLite;FBAV/{versi_chrome};FBPN/com.facebook.mlite;FBLC/de_DE;FBRV/{str(rr(111111111,999999999))};FBCR/Airtel;FBMF/Facebook;Facebook/Ige;FBDV/SM-J105H;FBSV/{android};FBCA]"
+	if ua1 in ugent:pass
+	else:ugent.append(ua1)
+	ua2 = f"[FBAN/MessengerLite;FBAV/{versi_chrome};FBPN/com.facebook.mlite;FBLC/de_DE;FBRV/{str(rr(111111111,999999999))};FBCR/Airtel;FBMF/Facebook;Facebook/Ige;FBDV/SM-J110F;FBSV/{android};FBCA]"
+	if ua2 in ugent:pass
+	else:ugent.append(ua2)
 		
 ###----------[ LOGO AUTHOR DAN VERSI]---------- ###
 class Logo:
