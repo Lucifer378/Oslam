@@ -57,15 +57,9 @@ for z in range(200):
 	versi = random.choice(["10_0_2","10_1_1","10_2","10_2_1","10_3_1","10_3_2","10_3_3"])
 	verchrome = random.choice(["602.1.50","602.2.14","602.3.12","602.4.6","603.1.30","603.2.4","603.3.8","601.1.46"])
 	mob = random.choice(["14A456","14B100","14C92","14D27","14E304","14F89","14G60","13C75","13D15","13E233","13E238","13F69","13G34","13G36"])
-	ua1 = f"Dalvik/2.1.0 (Linux; U; Android {android}; Pixel 2 Build/OPD3.170816.012) [FBAN/MessengerLite;FBAV/{versi_chrome};FBPN/com.facebook.mlite;FBLC/de_DE;FBRV/{versi_app};FBCR/Airtel;FBMF/Facebook;Facebook/Ige;FBDV/Pixel 2;FBSV/{android};FBCA]"
-	if ua1 in ugent:pass
-	else:ugent.append(ua1)
-	ua2 = f"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Mobile Safari/537.36"
-	if ua2 in ugent:pass
-	else:ugent.append(ua2)
-	ua3 = f"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36"
-	if ua3 in ugent:pass
-	else:ugent.append(ua3)
+	ua = f"Dalvik/2.1.0 (Linux; U; Android {android}; Pixel 2 Build/OPD3.170816.012) [FBAN/MessengerLite;FBAV/{versi_chrome};FBPN/com.facebook.mlite;FBLC/de_DE;FBRV/{versi_app};FBCR/Airtel;FBMF/Facebook;Facebook/Ige;FBDV/Pixel 2;FBSV/{android};FBCA]"
+	if ua in ugent:pass
+	else:ugent.append(ua)
 		
 ###----------[ LOGO AUTHOR DAN VERSI]---------- ###
 class Logo:
