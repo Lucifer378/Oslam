@@ -57,15 +57,11 @@ for z in range(200):
 	versi = random.choice(["10_0_2","10_1_1","10_2","10_2_1","10_3_1","10_3_2","10_3_3"])
 	verchrome = random.choice(["602.1.50","602.2.14","602.3.12","602.4.6","603.1.30","603.2.4","603.3.8","601.1.46"])
 	mob = random.choice(["14A456","14B100","14C92","14D27","14E304","14F89","14G60","13C75","13D15","13E233","13E238","13F69","13G34","13G36"])
-	ua1 = f"[FBAN/MessengerLite;FBAV/{versi_chrome};FBBV/193013937;FBDM/"+"{density=2.625,width=1080,height=1794};"+f"FBLC/en_US;FBRV/0;FBCR/Verizon;FBMF/Google;FBBD/google;FBPN/com.facebook.mlite;FBDV/Pixel 2;FBSV/{versi_android};FBBK/1;FBOP/1;FBCA/arm64-v8a:;"
-	if ua1 in ugent:pass
-	else:ugent.append(ua1)
-	ua2 = f"FBDM/"+"{density=1.5,width=540,height=960};"+"FBLC/en_US;FBRV/183119516;FBCR/TM;FBMF/facebook;FBBD/MessengerLite;FBPN/com.facebook.mlite;FBDV/{siga1};FBSV/{versi_android};FBOP/1;FBCA/armeabi-v7a:armeabi;]"
-	if ua2 in ugent:pass
-	else:ugent.append(ua2)
-	ua3 = f"Dalvik/2.1.0 (Linux; U; Android ios13; iPhone Build/MRA58K) [FBAN/MessengerLite;FBAV/{versi_chrome};FBBV/54364624;FBDM/"+"{density=2.0,width=720,height=1360};"+f"FBLC/en_US;FBRV/156625696;FBCR/T-Mobile;FBID/phone;FBMF/iPhone;FBBD/iPhone;FBPN/com.facebook.mlite;FBDV/iPhone5,1;FBSV/{versi_android};FBOP/19;FBCA/armeabi-v7a:armeabi;]"
-	if ua3 in ugent:pass
-	else:ugent.append(ua3)
+	gt = random.choice(["RMX3472", "RMX3611", "RMX3396", "RMX3572", "RMX3706", "RMX3396", "RMX3610", "RMX3371", "RMX3572", "RMX3461", "RMX3311", "RMX3563", "RMX3371", "RMX3269", "RMX3370", "RMX3574", "RMX3661", "RMX3611"])
+	xnxx = random.choice(["SP1A.210812.016","TP1A.220905.001","SP1A.210812.016","SP1A.210812.016","TP1A.220905.001","TP1A.220905.001","SP1A.210812.016","RKQ1.210503.001","TP1A.220905.001","RKQ1.211119.001","TP1A.220905.001","TP1A.220905.001","RP1A.201005.001","RP1A.201005.001","RKQ1.211119.001"])
+	ua = f"Dalvik/2.1.0 (Linux; U; Android {android}; {gt} Build/{xnxx}) [FBAN/EMA;FBBV/{str(rr(111111111,999999999))};FBAV/{versi_chrome};FBDV/{gt};FBLC/id_ID;FBNG/WIFI;FBMNT/METERED;FBDM/"+"{density=3.0}]"
+	if ua in ugent:pass
+	else:ugent.append(ua)
 		
 ###----------[ LOGO AUTHOR DAN VERSI]---------- ###
 class Logo:
