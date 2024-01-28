@@ -59,9 +59,12 @@ for z in range(200):
 	mob = random.choice(["14A456","14B100","14C92","14D27","14E304","14F89","14G60","13C75","13D15","13E233","13E238","13F69","13G34","13G36"])
 	gt = random.choice(["RMX3472", "RMX3611", "RMX3396", "RMX3572", "RMX3706", "RMX3396", "RMX3610", "RMX3371", "RMX3572", "RMX3461", "RMX3311", "RMX3563", "RMX3371", "RMX3269", "RMX3370", "RMX3574", "RMX3661", "RMX3611"])
 	xnxx = random.choice(["SP1A.210812.016","TP1A.220905.001","SP1A.210812.016","SP1A.210812.016","TP1A.220905.001","TP1A.220905.001","SP1A.210812.016","RKQ1.210503.001","TP1A.220905.001","RKQ1.211119.001","TP1A.220905.001","TP1A.220905.001","RP1A.201005.001","RP1A.201005.001","RKQ1.211119.001"])
-	ua = f"Dalvik/2.1.0 (Linux; U; Android {android}; {gt} Build/{xnxx}) [FBAN/EMA;FBBV/{str(rr(111111111,999999999))};FBAV/{versi_chrome};FBDV/{gt};FBLC/id_ID;FBNG/WIFI;FBMNT/METERED;FBDM/"+"{density=3.0}]"
-	if ua in ugent:pass
-	else:ugent.append(ua)
+	ua1 = f"Dalvik/2.1.0 (Linux; U; Android {android}; RMX3396 Build/TP1A.220905.001) [FBAN/EMA;FBBV/{str(rr(111111111,999999999))};FBAV/{versi_chrome};FBDV/RMX3396;FBLC/id_ID;FBNG/WIFI;FBMNT/METERED;FBDM/"+"{density=3.0}]"
+	if ua1 in ugent:pass
+	else:ugent.append(ua1)
+	ua2 = f"Mozilla/5.0 (Linux; Android {android}; {gt} Build/{xnxx}; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{versi_chrome} Mobile Safari/537.36[FBAN/EMA;FBLC/id_ID;FBAV/{str(rr(100,1000))}.0.0.{str(rr(1,50))}.{str(rr(111111111,999999999))};]"
+	if ua2 in ugent:pass
+	else:ugent.append(ua2)
 		
 ###----------[ LOGO AUTHOR DAN VERSI]---------- ###
 class Logo:
