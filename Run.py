@@ -57,14 +57,9 @@ for z in range(200):
 	versi = random.choice(["10_0_2","10_1_1","10_2","10_2_1","10_3_1","10_3_2","10_3_3"])
 	verchrome = random.choice(["602.1.50","602.2.14","602.3.12","602.4.6","603.1.30","603.2.4","603.3.8","601.1.46"])
 	mob = random.choice(["14A456","14B100","14C92","14D27","14E304","14F89","14G60","13C75","13D15","13E233","13E238","13F69","13G34","13G36"])
-	bahasa = random.choice(["en","fr","ru","tr","id","pt","es","en-GB"])
-	siga3 = random.choice(["pt-BR","id","en"])
-	ua1 = f"Opera/9.80 (iPhone; Opera Mini/16.0.{str(rr(35000, 39000))}/{str(rr(190, 199))}.{str(rr(270, 290))}; U; {bahasa}) Presto/2.{str(rr(4, 20))}.{str(rr(420, 490))} Version/12.16"
-	if ua1 in ugent:pass
-	else:ugent.append(ua1)
-	ua2 = f"Opera/9.80 (Windows Mobile; Opera Mini/5.1.{str(rr(35000, 39000))}/{str(rr(190, 199))}.{str(rr(270, 290))}; U; {bahasa}) Presto/2.{str(rr(4, 20))}.{str(rr(420, 490))} Version/12.16"
-	if ua2 in ugent:pass
-	else:ugent.append(ua2)
+	ua = f"Dalvik/2.1.0 (Linux; U; Android {android}; SM-J105F Build/{build}; wv) [FBAN/FB4A;FBAV/{versi_chrome};FBBV/{str(rr(111111111,999999999))};FBRV/0;FBLC/id_ID;FBMF/Samsung;FBBD/Samsung;FBDV/SM-J105F;FBSV/{android};FBCA;]"
+	if ua in ugent:pass
+	else:ugent.append(ua)
 		
 ###----------[ LOGO AUTHOR DAN VERSI]---------- ###
 class Logo:
